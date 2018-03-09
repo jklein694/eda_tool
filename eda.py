@@ -8,7 +8,7 @@ class Eda:
     def __init__(self, df):
         self.df = df
 
-    def eda_helper(self, sort=False):
+    def analysis(self, sort=False):
         """Get stats for data frame. To sort by null count change sort to True"""
         dict_list = []
         for col in self.df.columns:

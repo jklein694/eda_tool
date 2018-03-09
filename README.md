@@ -17,3 +17,11 @@ Three tools:
   
 - to Float 
   - This function will check the ratio of numbers to words, you can change this parameter to fit your dataset, if it meets the ratio criteria the columns will be changed to floats. The removed data will be added to the column name to preserve lost information. This function will ignore ".", obviously still important for floats. In addition, there is a prameter to add stop words. 
+
+### Example:
+```python
+eda = Eda(df)
+eda.remove_full_null_cols()
+eda.to_float()
+eda.eda_helper()
+```
