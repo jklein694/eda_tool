@@ -22,9 +22,9 @@ Three tools:
 ```python
 eda = Eda(df)
 empty_df = eda.remove_full_null_cols()
-eda.remove_full_null_cols()
+eda.remove_col_name_spaces(capitalization=True)
 eda.to_float(num_ratio=.20, stop_words=['important'])
-eda.eda_helper(sort=True)
+eda.analysis(sort=True)
 data = eda.df
 data.head()
 ```

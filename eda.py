@@ -56,15 +56,15 @@ class Eda:
                 data.drop(1, inplace=True)
         return drop_col_df
 
-    def remove_col_name_spaces(self, spaces=True, capitalization=False):
+    def remove_col_name_spaces(self, spaces=True, to_lower_case=False):
         """Removes spaces and changes them to underscores"""
 
-        # cols.replace(' ', '_').lower
+
         if spaces:
             columns = [str(cols).replace(' ', '_') for cols in self.df.columns]
             self.df.columns = columns
 
-        if capitalization:
+        if to_lower_case:
             columns_caps = [str(cols).lower() for cols in self.df.columns]
             self.df.columns = columns_caps
 
