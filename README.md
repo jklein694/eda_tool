@@ -21,7 +21,10 @@ Three tools:
 ### Example:
 ```python
 eda = Eda(df)
+empty_df = eda.remove_full_null_cols()
 eda.remove_full_null_cols()
-eda.to_float()
-eda.eda_helper()
+eda.to_float(num_ratio=.20, stop_words=['important'])
+eda.eda_helper(sort=True)
+data = eda.df
+data.head()
 ```
